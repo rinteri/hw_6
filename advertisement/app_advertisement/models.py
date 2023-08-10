@@ -9,6 +9,6 @@ class Advertisement(models.Model): #абстрактный класс(модел
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
     def __str__(self): 
-        return f'<Advertisement: Advertisement(id={self.id}, title={self.title}, price={self.price})>'
+        return f'Advertisement(id={self.id}, title={self.title}, price={self.price})'
     class Meta: 
         db_table = 'advertisements'
